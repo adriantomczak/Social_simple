@@ -1,5 +1,20 @@
 {% extends 'base.html' %}
+{#{% load staticfiles %}#}
 
 {% block content %}
+
     <h1>Welcome to Star Social!</h1>
+
+    <img id="apod_img_id" width="250px"/>
+
+    <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+    <p id="copyright"></p>
+
+    <h4 id="apod_title"></h4>
+    <p id="apod_explaination"></p>
+
+{#    <script type="text/javascript" src="../static/simplesocial/js/apod.js"></script>#}
+{#    <script type="text/javascript" src="{% static 'static/simplesocial/js/apod.js' %}"></script>#}
+
+
 {% endblock %}
