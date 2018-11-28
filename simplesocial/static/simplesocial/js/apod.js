@@ -1,4 +1,4 @@
-// $(document).ready(function () {
+$(document).ready(function () {
 
     let url = "https://api.nasa.gov/planetary/apod?api_key=";
 
@@ -24,4 +24,4 @@
       $("#apod_title").text(result.title);
     }
     });
-// });
+});
