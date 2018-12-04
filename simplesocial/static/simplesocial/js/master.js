@@ -175,14 +175,11 @@ function animate() {
 
   context.beginPath();
 
-  // Création d'une copie de l'array persons
   persons_order = persons.slice(0);
-  // Tri par ordre de position sur l'axe y (afin de gérer les z-index)
   persons_order.sort(function(a, b) {
     return a.y - b.y
   });
 
-  // Paint les instances dans l'ordre trié
   for (var i in persons_order) {
     var u = persons_order[i].id;
     persons[u].walk();
